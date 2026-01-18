@@ -1,0 +1,16 @@
+{
+  "Group": "Clicker",
+  "Name": "Economy",
+  "Version": "1.0.2",
+  "Description": "A Hytale Economy plugin",
+  "Authors": [
+    {
+      "Name": "Ender"
+    }
+  ],
+  "Main": "me.clicker.economy.EconomyPlugin",
+  "ServerVersion": "*",
+  "Dependencies": {},
+  "OptionalDependencies": {},
+  "DisabledByDefault": false
+}

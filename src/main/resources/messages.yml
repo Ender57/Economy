@@ -1,0 +1,41 @@
+must_be_positive: "&cError: &4Amount to pay must be positive."
+player_not_found: "&cError: &4Player not found."
+amount_invalid: "&cError: &4Invalid amount."
+internal_error: "&cAn internal error occurred while attempting to perform this command."
+
+pay:
+  no_permission: "&cError: &4No permission: economy.pay"
+  player_only: "&cError: &4Player-only command. Use &e/eco give|take|set &4instead."
+  self: "&cError: &4You can't pay yourself."
+  pay_offline: "&cError: &4You cannot pay offline users."
+  not_enough: "&cError: &4Not enough funds. &aYour balance: &c{balance}"
+  sender: "&c{amount} &ahas been sent to &e{player}"
+  target: "&c{amount} &ahas been received from &e{player}"
+
+eco:
+  no_permission: "&cError: &4No permission: economy.eco"
+  give:
+    sender: "&c{amount} &ahas been added to &e{player} &aaccount. New balance: &c{balance}"
+    target: "&c{amount} &ahas been added to your account."
+  take:
+    not_enough: "&cError: &e{player} &4doesn't have enough funds. &aBalance: &e{balance}"
+    sender: "&c{amount} &ataken from &e{player} &aaccount. New balance: &c{balance}"
+    target: "&c{amount} &ahas been taken from your account"
+  set:
+    sender: "&aYou set &e{player}&a's balance to &c{amount}"
+    target: "&aYour balance was set to &c{amount}"
+
+balance:
+  console_requires_player: "&cError: &4Console must specify a player: &e/balance <player>"
+  no_permission: "&cError: &4No permission: economy.balance"
+  others_no_permission: "&cError: &4No permission: economy.balance.others"
+  self: "&aBalance: &c{balance}"
+  other: "&aBalance of &e{player}&a: &c{balance}"
+
+baltop:
+  no_permission: "&cError: &4No permission: economy.baltop"
+  header: |-
+    &6Top balances ({time})
+     &e---- &6Balancetop &e-- &6Page &c{page}&6/&c{pages} &e---- 
+    &6Server Total: &c{total}
+  record: "&f#{rank}. {player}, {balance}"

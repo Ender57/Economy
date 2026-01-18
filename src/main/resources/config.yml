@@ -1,0 +1,23 @@
+# ==========================================
+# Economy Configuration
+# ==========================================
+
+currency:
+  # Currency symbol shown before balances
+  symbol: "$"
+
+  # Number of decimal places to show (0 = no decimals, 2 = 1.50, etc.)
+  fraction_digits: 2
+
+balance:
+  # Starting balance for new players
+  starting: 1000
+
+pay:
+  # Allow paying offline players
+  # true = can pay offline, false = must be online
+  allow_offline: true
+
+baltop:
+  # Number of players shown per page
+  page_size: 10
